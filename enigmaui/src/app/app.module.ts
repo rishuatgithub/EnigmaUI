@@ -4,8 +4,13 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { NavigationComponent } from './navigation/nav.component';
+import { HomeComponent } from './home/home.component';
+
 @NgModule({
   declarations: [
+    NavigationComponent,
+    HomeComponent,
     AppComponent
   ],
   imports: [
