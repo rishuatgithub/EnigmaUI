@@ -6,16 +6,27 @@ import { AppComponent } from './app.component';
 
 import { NavigationComponent } from './navigation/nav.component';
 import { HomeComponent } from './home/home.component';
+import { TransformationComponent } from './transformation/transformation.component';
+import { ScheduleComponent } from './scheduler/schedule.component';
+import { ConfigComponent } from './configuration/config.component';
+import { LogComponent } from './log/log.component';
+
+import {DragDropModule} from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
     NavigationComponent,
     HomeComponent,
+    TransformationComponent,
+    ScheduleComponent,
+    ConfigComponent,
+    LogComponent,
     AppComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]
