@@ -12,6 +12,7 @@ import { ConfigComponent } from './configuration/config.component';
 import { LogComponent } from './log/log.component';
 
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    DragDropModule
+    DragDropModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
