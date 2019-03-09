@@ -1,6 +1,79 @@
 <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" [routerLink]="['/configuration']"><strong>Configuration</strong></a>
+                
+                <div class="collapse navbar-collapse">
+                  <ul class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" [routerLink]="['/configuration/install']">Install Software</a>
+                    </li>
+                  </ul>
+                </div>
+        </nav>
+        <br>
+        <!-- Source -->
+        <div class="row">
+                <div class="col">
+                        JDBC Connector :
+                </div>
+                <div class="col inputconnector">
+                        <mat-form-field>
+                                <input matInput placeholder="Connection Driver" required>
+                        </mat-form-field>
+                        <mat-form-field>
+                                <input matInput placeholder="Port" required>
+                        </mat-form-field>
+                        <mat-form-field>
+                                <input matInput placeholder="Username" required>
+                        </mat-form-field>
+                        <mat-form-field>
+                                <input matInput placeholder="Password" required>
+                        </mat-form-field>
+                </div>
+        </div>
+        
+        <!-- stream -->
+        <div class="row">
+                        <div class="col">
+                                Stream Connector :
+                        </div>
+                        <div class="col inputconnector">
+                                <mat-form-field>
+                                        <input matInput placeholder="Broker URL" required>
+                                </mat-form-field>
+                                <mat-form-field>
+                                        <input matInput placeholder="Username" required>
+                                </mat-form-field>
+                                <mat-form-field>
+                                        <input matInput placeholder="Password" required>
+                                </mat-form-field>
+                        </div>
+        </div>
 
-        <nav class="navbar navbar-light">
-                <h5><strong>Configuration</strong></h5>  
-              </nav>
+        <!-- target -->
+        <div class="row">
+                        <div class="col">
+                                Cloud Storage
+                        </div>
+                        <div class="col inputconnector">
+                                <mat-form-field>
+                                        <input matInput placeholder="Connection Driver" required>
+                                </mat-form-field>
+                                <mat-form-field>
+                                        <input matInput placeholder="Port" required>
+                                </mat-form-field>
+                                <mat-form-field>
+                                        <input matInput placeholder="Username" required>
+                                </mat-form-field>
+                                <mat-form-field>
+                                        <input matInput placeholder="Password" required>
+                                </mat-form-field>
+                        </div>
+        </div>
+        
+        <!-- Save -->
+        <div class="row">
+                <button mat-raised-button color="primary">Save Configuration</button>
+                <button mat-raised-button color="warn">Reset</button>
+        </div>
 </div>

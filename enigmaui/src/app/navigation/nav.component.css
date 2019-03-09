@@ -6,6 +6,18 @@
     color: white;
 }
 
+.navtitle{
+    background-color: #1a237e;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: white;
+  }
+  /* Font color */
+  input.mat-input-element {
+    color: white;
+  }
+
 i {
     height: 30px;
     width: 20px;

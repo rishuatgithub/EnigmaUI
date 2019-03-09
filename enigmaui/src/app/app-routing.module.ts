@@ -6,12 +6,14 @@ import { TransformationComponent } from './transformation/transformation.compone
 import { ScheduleComponent } from './scheduler/schedule.component';
 import { ConfigComponent } from './configuration/config.component';
 import { LogComponent } from './log/log.component';
+import { InstallComponent } from './configuration/installation/install.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'transformation', component: TransformationComponent },
   { path: 'scheduler', component: ScheduleComponent },
   { path: 'configuration', component: ConfigComponent}, 
+  { path: 'configuration/install', component: InstallComponent },
   { path: 'log', component: LogComponent },
   { path: '', redirectTo:'/home', pathMatch:'full' }
 ];

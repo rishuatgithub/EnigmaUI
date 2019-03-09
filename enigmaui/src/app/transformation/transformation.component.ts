@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 
 @Component({
     selector:'transformation',
@@ -7,5 +8,15 @@ import { Component } from "@angular/core";
 })
 
 export class TransformationComponent{
-
+    /** timePeriods = [
+        'Source',
+        'Stream',
+        'Transform',
+        'Target'
+      ];
+    
+      drop(event: CdkDragDrop<string[]>) {
+        moveItemInArray(this.timePeriods, event.previousIndex, event.currentIndex);
+      }
+      **/
 }
